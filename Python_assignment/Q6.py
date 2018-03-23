@@ -3,11 +3,16 @@
 from functools import reduce
 
 def sum1(list1):
-    return reduce(lambda x,y:x+y,list1)
+    s = 0
+    for i in list1:
+        s += i
+    return s
 
 def multiply(list1):
-    return reduce(lambda x,y:x*y,list1)
-
+    m = 1
+    for i in list1:
+        m*=i
+    return m
 
 l = [32,545,657,2,65,232]
 print ("Sum is :",sum1(l))

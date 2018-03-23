@@ -8,6 +8,7 @@ def hapaxes(fname):
     f = open(fname,'r')
     hapx=[]
     w = f.read().lower()
+    f.close()
     words = re.findall('\w+',w)
     for i in words:
         d[i]+=1

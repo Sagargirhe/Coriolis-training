@@ -11,6 +11,5 @@ def isPalindrome(string):
             return False
     return True
 
-
 #print (isPalindrome("radarr"))
 
