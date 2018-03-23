@@ -22,6 +22,7 @@ def sentence_splitter(fname):
     f = open(fname,'r')
     content = f.read()
     lis = re.split(r'(?<!\w\.\w)(?<![A-Z][a-z]\.)(?<=\.|\?)\s',content)
+    print (lis)
     i = 0
     while i<len(lis)-1:
         if ord(lis[i+1][0]) >64 and ord(lis[i+1][0])<91:
@@ -32,4 +33,4 @@ def sentence_splitter(fname):
         i+=1
     #print (lis[i])
 
-sentence_splitter('Q42.txt')
+#sentence_splitter('Q42.txt')

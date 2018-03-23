@@ -8,4 +8,4 @@ def avg_word_len(fname):
         words = re.findall('\w+',r)
     return reduce(lambda x,y:x+y,list(map(len,words)))//len(words)
 
-#print (avg_word_len('32.txt'))
+print (avg_word_len('Q38.txt'))

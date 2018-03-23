@@ -17,5 +17,5 @@ def hapaxes(fname):
             hapx.append(key)
     return hapx
 
-#print (hapaxes('32.txt'))
+print (hapaxes('Q36.txt'))
 

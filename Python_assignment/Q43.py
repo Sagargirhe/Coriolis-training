@@ -7,23 +7,23 @@ from collections import defaultdict
 def find_most_common_chars(lis):
     d = defaultdict(int)
     mx = 0
-    l = set()
-    s = set()
+    l = []
+    s = []
     for word in lis:
-        str1 = ''.join(set(sorted(word)))
+        str1 = ''.join(list(sorted(word)))
         d[str1]+=1
     for k in d:
         if mx<d[k]:
             mx=d[k]
-            l = set(k)
+            l = k
     for w in lis:
-        if set(w) == l:
-            s.add(w)
+        if ''.join(list(sorted(w))) == l:
+            s.append(w)
     return s
 
 f = open('Q43.txt','r')
 lis = f.read().split('\n')
 f.close()
-print (find_most_common_chars(lis))
+print (set(find_most_common_chars(lis)))
 
 

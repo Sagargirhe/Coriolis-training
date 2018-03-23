@@ -29,4 +29,4 @@ c = str(input())
 while c != word:
     print ("Guess the colur word!")
     c = str(input())
-print ("Correct")
+print ("Correct!")

@@ -15,6 +15,7 @@ In a game of Lingo, there is a hidden word, five characters long. The object of 
 import random
 def lingo():
     word = random.choice(['tiger','snake','mouse'])
+    print (word[0]+('-'*(len(word)-1)))
     inp = str(input())
     while word != inp:
         op = ''

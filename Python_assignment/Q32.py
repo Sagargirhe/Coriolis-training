@@ -9,4 +9,4 @@ def print_palindromes(file_name):
             print (line)
     f.close()
 
-print_palindromes('32.txt')
+print_palindromes('Q32.txt')

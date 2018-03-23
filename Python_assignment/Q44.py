@@ -24,10 +24,9 @@ def check_balance(str1):
             stack.pop()
         else:
             stack.append(st)
-    return stack == []
+    return "OK" if stack == [] else "NOT OK"
 print ('Enter the number to generate string:')
-n = int(input())
+n = 2*int(input())
 s = generate_string(n)
-print (s)
-print (check_balance(s))
+print (s,check_balance(s))
 

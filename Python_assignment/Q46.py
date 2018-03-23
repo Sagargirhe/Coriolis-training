@@ -23,7 +23,7 @@ lis = f.read().split('\n')
 f.close()
 l = list(map(lambda x:alternade(x),lis))
 for i in l:
-    if len(i[1]) > 1 and i[1] in lis and i[2] in lis:
+    if len(i[0]) > 1 and i[1] in lis and i[2] in lis:
         print ('"{0}": makes "{1}" and "{2}".'.format(i[0],i[1],i[2]))
 
 

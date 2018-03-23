@@ -27,10 +27,12 @@ def speak_ICAO(string,ch_delay,w_delay):
     s.remove('')
     for w in s:
         for ch in w:
-            tts = gTTS(text=ch,lang='en')
-            tts.save("C:/Q42.mp3")
+            tts = gTTS(text=d[ch],lang='en')
+            tts.save("Q42.mp3")
+            os.system("vlc Q42.mp3")
             time.sleep(ch_delay)
         time.sleep(w_delay)
+    os.system("rm Q42.mp3")
     
 
 speak_ICAO("Hi dude,How are you?",1,3)
